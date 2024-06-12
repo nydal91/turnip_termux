@@ -60,6 +60,7 @@ echo -e "${GREEN}${BOLD}Applying the patch${NC}${NORMAL}"
 git apply -v 04-wsi-termux-x11-only-kgsl_fixed.patch
 
 wget https://raw.githubusercontent.com/nydal91/turnip_termux/main/159bdeb49f8b32796737bad7c6ba1041dc9f6483.patch
+echo -e "${GREEN}${BOLD}Applying the patch 2, fix adreno 740${NC}${NORMAL}"
 git apply -v 159bdeb49f8b32796737bad7c6ba1041dc9f6483.patch
 ##rm ${MESA_PREFIX}/src/vulkan/wsi/wsi_common_x11.c
 ##cp ${BUILD_PREFIX}/wsi_common_x11.c ${MESA_PREFIX}/src/vulkan/wsi/
